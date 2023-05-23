@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Weather APP </title>
+  </head>
+  <body>
+    <form action="/" method="post">
+        
+        <div class="card">
+          <h5 class="card-header">
+              <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping">@</span>
+                  <input type="text" name="cityname" class="form-control" placeholder="City_Name Here" aria-label="cityname" aria-describedby="addon-wrapping">
+                </div>
+          </h5>
+          <div class="card-body">
+           
+            <p> Whether Status <%= desc %></p>
+            <h1> Temperature Of <%= query %> Is : <%= temp %> Degree Celcius </h1>
+            <img src="<%= imageurl %>" alt="none">
+
+          </div>
+        </div>
+  </body>
+</html>
